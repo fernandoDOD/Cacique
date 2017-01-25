@@ -1,0 +1,19 @@
+extends _base
+
+block content
+    section.content-page
+        div.row.start-xs.limiter__container.title-contact
+            h3 CONTACTO
+        div.row.start-xs.limiter__container.title-contact
+            img.to-svg(src="images/icons/contact.svg", alt="icono-contacto")
+            p info@caciquetundama.com </br>
+                | 315 3592837
+        div.row.center-xs.middle-xs
+            div.col-xs-8.message-contact.limiter__container
+                h4 DÉJANOS TU COMENTARIO
+            div.black-bk
+                div.row.center-xs.limiter__container.form-contact
+                    form.col-xs-9.row.end-xs.limiter__container
+                        textarea.col-xs-12(placeholder="Aquí va tu comentario")
+                        button.col-xs-2 ENVIAR
+    include _footer

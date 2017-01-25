@@ -1,0 +1,47 @@
+.row{
+	margin: 0px 0px;
+}
+.limiter__container{
+	margin: auto;
+	max-width: @screen-lg;
+	padding: 0px @padding;
+	width: 100%;
+	&.not-padding{
+		padding: 0px;
+	}
+}
+
+.grid-pinteres {
+  	max-width: 1200px;
+}
+
+/* clearfix */
+.grid-pinteres:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+	margin: 12px;
+	.hover-gallery{
+		height: 100%;
+    	width: 100%;
+    	position: absolute;
+    	transition: all .3s;
+    	h4{
+    		display: none;
+    	}
+		&:hover{
+    		background: rgba(217, 102, 0, 0.6);
+    		h4{
+    			display: block;
+    			color: #fff;
+    			font-size: 30px;
+    			font-family: @font-title;
+    		}
+		}
+	}
+}

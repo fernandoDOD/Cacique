@@ -1,0 +1,280 @@
+.black-bk{
+	position: relative;
+	background: #000;
+	width: 100%;
+	margin-top: 0;
+	padding: 40px 0;
+}
+.section-notice{
+	.item-notice{
+		height: 300px;
+		width: 100%;
+		padding: 0;
+		transition: all .3s;
+		margin-top: 5px;
+		.hover-notice{
+			width: 100%;
+			background:  rgba(0, 0, 0, 0.0);
+			transition: all .4s;
+			h6{
+				color: transparent;
+				top: -100%;
+				transition: all .1s;
+			}
+			a{
+				color: transparent;
+				bottom: -100%;
+				transition: all .4s;
+				&:hover{
+    				opacity: .83;
+    			}
+			}
+		}
+		&:hover{
+			.hover-notice{
+				height: 300px;
+				background: rgba(0, 0, 0, 0.6);
+				h6{
+					font-size: 32px;
+					font-family: @font-title;
+					font-weight: normal;
+					color: #fff;
+					margin: 0;
+					top: 0;
+				}
+				a{
+					background: @color-green-light;
+					color: #fff;
+					margin-top: -80px;
+    				padding: 0px 35px 4px 35px;
+    				font-size: 20px;
+    				font-weight: normal;
+    				bottom: 0;
+				}
+			}
+			h4{
+				display: none;
+			}
+		}
+		h4{
+			background: rgba(168, 208, 56, 0.6);
+			color: #fff;
+			width: 100%;
+			margin: 0;
+			padding: @padding;
+			font-size: 18px;
+			transition: all .3s;
+		}
+	}
+}
+.convocations{
+	position: relative;
+	width: 100%;
+	margin-top: 0;
+	padding: 40px 0;
+	.section-convocations{
+		.item-convocations{
+		height: 600px;
+		width: 100%;
+		padding: 0;
+		transition: all .3s;
+		margin-top: 10px;
+		.hover-convocations{
+			width: 100%;
+			height: 100%;
+			background:  rgba(0, 0, 0, 0.6);
+			transition: all .3s;
+			padding: 5% 15%;
+			h6{
+				font-size: 32px;
+				font-family: @font-title;
+				font-weight: normal;
+				color: #fff;
+				margin: 0;
+				.responsive(@screen-sm,{
+					font-size: 22px;
+					});
+			}
+			span{
+				max-width: 100px;
+				height: 6px;
+				background: @color-green-light;
+			}
+			p{
+				font-family: @font-text;
+				font-size: 32px;
+				color: #fff;
+				margin-top: -100px;
+				line-height: 1em;
+				.responsive(@screen-sm,{
+					font-size: 22px;
+					});
+			}
+		}
+		&:hover{
+			.hover-convocations{
+				background: rgba(0, 142, 37, 0.6);;
+			}
+			
+		}
+		
+	}
+	}
+}
+.content-page{
+	margin-top: 150px;
+	.content-about{
+		p{
+			text-align: justify;
+		}
+	}
+	.responsive(@screen-md,{
+		margin-top: 250px;
+		});
+}
+.no-margin{
+	margin-top: -55px;
+	z-index: -1;
+	height: 450px;
+}
+.slide-content{
+	margin-top: -55px;
+	z-index: -1;
+	height: 350px;
+}
+
+.frame-content{
+	margin-top: -420px;
+	margin-bottom: 50px;
+}
+.frame-slide{
+	margin-top: -300px;
+	margin-bottom: 50px;
+}
+.content-ficict{
+	img{
+		width: 90%;
+	}
+	p{
+		text-align: justify;
+	}
+	strong{
+		font-size: 30px;
+		line-height: 1em;
+		margin: 0;
+		text-align: left !important;
+	}
+}
+.fest-content{
+	img{
+		width: 80%;
+	}
+	h4{
+		color: #fff;
+		font-size: 60px;
+		line-height: 1em;
+		margin: 15px 0 0 0;
+	}
+	a{
+		display: block;
+		text-decoration: underline;
+		color: #fff;
+		font-size: 26px;
+		font-weight: 700;
+		padding: @padding;
+	}
+}
+.section-team{
+	.profile{
+		width: 90%;
+		margin: 5%;
+		border: 5px #BCBCBC solid;
+		padding: 20px;
+		display: none;
+		img{
+			height: auto;
+			width: 100%;
+		}
+		h3{
+			text-align: left;
+			color: @color-red;
+			font-size: @size-title;	
+			font-family: @font-title;
+			line-height: 1.5em;
+			margin: 0;
+		}
+		h4{
+			text-align: left;
+			color: @color-red;
+			font-size: @size-title * .6;	
+			font-family: @font-title;
+			line-height: 1.3em;
+			margin: 0;
+			border-bottom: 4px @color-red solid;
+		}
+		p{
+			text-align: justify;
+			font-size: 16px;
+		}
+	}
+	.active{
+			display: inline-flex;
+		}
+}
+.margin-inscription{
+	margin-top: 141px;
+}
+.text-fsacct{
+	p{
+		color: #000;
+		text-align: justify;
+		font-size: 20px;
+		margin-bottom: 50px;
+	}
+}
+
+.section-contact__fsacct{
+	h5{
+		line-height: 1.5em;
+		color: #fff;
+		font-size: 30px;
+		font-weight: 400;
+		font-family: @font-text;
+		margin: 0;
+		background: #000;
+	    z-index: 2;
+	    padding: 0 15px;
+	}
+	.line-green{
+		width: 30%;
+	    height: 4px;
+	    background-color: @color-green;
+	    position: absolute;
+	    border-radius: 10px;
+	    margin-top: -40px;
+	}
+	p{
+		color: #fff;
+		font-size: 28px;
+		font-weight: 400;
+		font-family: @font-text;
+		margin: 0;
+		line-height: 1.5em;
+		.responsive(@screen-sm,{
+			font-size: 20px;
+			});
+	}
+}
+
+.message-contact{
+	background: @color-purple-2;
+	padding: @padding;
+	h4{
+		color: #fff;
+		font-family: @font-text;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1.5em;
+		margin: 0;
+	}
+}

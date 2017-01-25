@@ -1,0 +1,103 @@
+extends _base
+
+block content
+    script $('.header-content').addClass('menu-transparent');
+    
+    section.homepage-hero-module
+        div.row.center-xs
+            div#slider-wrapper
+                div#slider
+                    section.row.middle-xs.center-xs
+                        img(src="images/slide/slide-1.png", alt="")
+                    section.row.middle-xs.center-xs
+                        img(src="images/slide/slide-1.png", alt="")
+                    section.row.middle-xs.center-xs
+                        img(src="images/slide/slide-1.png", alt="")
+                div#btn-prev &#60;
+                div#btn-next &#62;
+        div.video-container
+            div.filter
+            video.fullWidth(autoplay loop)
+                source(src="images/video/video-index.MP4" type="video/mp4")
+                source(src="images/video/video-index.WEBM" type="video/webm")
+            div.poster.hidden
+                img(src="images/video/video-index.jpg", alt="")
+    section.black-bk
+        div.row.start-xs.limiter__container.title-notice
+            h3 NOTICIAS
+            h3.white-title NOTICIAS
+        div.section-notice.row.limiter__container
+            div.item-notice.row.bottom-xs.col-sm-12.col-md-6(style="background: url(images/post-1.png) center no-repeat; background-size: cover;")
+                div.hover-notice.row.center-xs.middle-xs
+                    h6.col-xs-12 CONVOCATORIA DEL FONDO PARA EL DESARROLLO CINEMATOGRAFICO
+                    a(href="#") ver +
+                h4.box CONVOCATORIA DEL FONDO PARA EL DESARROLLO CINEMATOGRAFICO
+            div.item-notice.row.bottom-xs.col-sm-12.col-md-6(style="background: url(images/post-2.png) center no-repeat; background-size: cover;")
+                div.hover-notice.row.center-xs.middle-xs
+                    h6.col-xs-12 IBERMÚSICA
+                    a(href="#") ver +
+                h4.box IBERMÚSICA
+            div.item-notice.row.bottom-xs.col-sm-12(style="background: url(images/fondo.png) center no-repeat; background-size: cover;")
+                div.hover-notice.row.center-xs.middle-xs
+                    h6.col-xs-12 FONDO PARA EL DESARROLLO CINEMATOGRÁFICO
+                    a(href="#") ver +
+                h4.box FONDO PARA EL DESARROLLO CINEMATOGRÁFICO
+        div.col-xs-12.row.center-xs
+            a(href="#")
+                img#arown-down.to-svg(src="images/icons/arrow.svg", alt="down")
+    section.convocations
+        div.row.start-xs.limiter__container.title-convocations
+            h3 CONVOCATORIAS
+            h3.white-title CONVOCATORIAS
+        div.section-convocations.row.limiter__container
+            div.col-xs-12.item-convocations(style="background: url(images/cine.png) center no-repeat; background-size: cover;")
+                div.hover-convocations.row.center-xs.middle-xs
+                    h6.col-xs-12 V VERSIÓN FESTIVAL INTERNACIONAL DE CINE INDEPENDIENTE CACIQUE TUNDAMA
+                    span.col-xs
+                    p.col-xs-12 Oficialmente se encuentra abierta la convocatoria para recepción de propuestas audiovisuales
+                    a.btn-ver.btn-green(href="#") ver +
+            div.col-xs-12.item-convocations(style="background: url(images/arte.png) center no-repeat; background-size: cover;")
+                div.hover-convocations.row.center-xs.middle-xs
+                    h6.col-xs-12 V VERSIÓN FESTIVAL DE SABERES ARTÍSTICOS
+                    span.col-xs
+                    p.col-xs-12 Oficialmente se encuentra abierta la convocatoria para recepción de propuestas audiovisuales
+                    a.btn-ver.btn-green(href="#") ver +
+    section.black-bk
+        div.row.start-xs.limiter__container.title-gallery
+            h3 GALERíA
+            h3.white-title VIDEO
+        div.grid-pinteres.limiter__container
+            div.grid-item
+                a.fancybox-thumb.hover-gallery.row.center-xs.middle-xs(rel="fancybox-thumb" href="images/galleries/gallery-1.png")
+                    h4.col-xs ECENARIOS MOVILES
+                img.image(src="images/galleries/gallery-1.png")
+            div.grid-item
+                a.fancybox-thumb.hover-gallery.row.center-xs.middle-xs(rel="fancybox-thumb" href="images/galleries/gallery-2.png")
+                    h4.col-xs ECENARIOS MOVILES
+                img.image(src="images/galleries/gallery-2.png")
+            div.grid-item
+                a.fancybox-thumb.hover-gallery.row.center-xs.middle-xs(rel="fancybox-thumb" href="images/galleries/gallery-3.png")
+                    h4.col-xs ECENARIOS MOVILES
+                img.image(src="images/galleries/gallery-3.png")
+            div.grid-item
+                a.fancybox-thumb.hover-gallery.row.center-xs.middle-xs(rel="fancybox-thumb" href="images/galleries/gallery-4.png")
+                    h4.col-xs ECENARIOS MOVILES
+                img.image(src="images/galleries/gallery-4.png")
+            div.grid-item
+                a.fancybox-thumb.hover-gallery.row.center-xs.middle-xs(rel="fancybox-thumb" href="images/galleries/gallery-5.png")
+                    h4.col-xs ECENARIOS MOVILES
+                img.image(src="images/galleries/gallery-5.png")
+            div.grid-item
+                a.fancybox-thumb.hover-gallery.row.center-xs.middle-xs(rel="fancybox-thumb" href="images/galleries/afiches-2015.jpg")
+                    h4.col-xs ECENARIOS MOVILES
+                img.image(src="images/galleries/afiches-2015.jpg")
+            div.grid-item
+                a.fancybox-thumb.hover-gallery.row.center-xs.middle-xs(rel="fancybox-thumb" href="images/galleries/gallery-6.png")
+                    h4.col-xs ECENARIOS MOVILES
+                img.image(src="images/galleries/gallery-6.png")
+            div.grid-item
+                a.fancybox-media.hover-gallery.row.center-xs.middle-xs(rel="fancybox-thumb" href="https://www.youtube.com/watch?v=lgnWHjK67Hk")
+                    h4.col-xs JAGUAR TALLER DIGITAL
+                img.image(src="images/galleries/jaguar.png")
+    include __donaciones
+    include _footer

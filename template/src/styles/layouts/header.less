@@ -1,0 +1,41 @@
+.header-content{
+	background: #000 !important;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding-bottom: 20px;
+	z-index: 999;
+}
+.menu-transparent{
+	background: rgba(0, 0, 0, 0.0) !important;
+	.responsive(@screen-sm,{
+		background: #000 !important;
+		});
+}
+header{
+	display: flex;
+	width: 100%;
+	.logo{
+		height: 120px;
+		width: auto;
+		transition: .3s;
+		svg{
+		}
+		&:hover{
+			transform: scale(1.02);
+		}
+		.responsive(@screen-md,{
+			height: 80px;
+			});
+	}
+	.responsive(@screen-sm,{
+		display: block !important;
+		});
+}
+
+.icons-menu{
+	.responsive(@screen-sm,{
+		padding-top: 20px; 
+		});
+}
+@import url(_menu.less);

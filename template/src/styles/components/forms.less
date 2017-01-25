@@ -1,0 +1,75 @@
+.inscription{
+	margin-top: 50px !important;
+	margin-bottom: 100px !important;
+	.responsive(@screen-md,{
+			padding: 10% !important;
+		});
+	input, textarea{
+		border: 0;
+		height: 60px;
+		background: #fff;
+		color: #000;
+		outline:0px;
+		font-size: 25px;
+		resize: none;
+	}
+	label{
+		padding: @padding 0;
+		color: #fff;
+		font-size: 25px;
+		font-family: @font-text;
+	}
+	p{
+		color: #fff;
+		font-size: 25px;
+		font-family: @font-text;
+		font-weight: 700; 
+	}
+	.radius{
+		height: 30px;
+	}
+	button{
+		margin-top: 50px;
+		border: 0;
+		outline: 0;
+		background: @color-green-light;
+		color: #fff;
+		padding: 5px;
+		font-size: @size-title / 1.1;
+		font-family: @font-title;
+	}
+}
+.image-inscription{
+	height: 150px;
+	width: auto;
+	bottom: 0;
+}
+.form-contact{
+	form{
+		textarea{
+			height: 150px;
+			outline: none;
+			font-size: 25px;
+			padding: @padding;
+			resize: none;
+		}
+		button{
+			margin-top: 20px;
+			background: #B2B2B2;
+			padding: 5px;
+			font-size: 28px;
+			font-weight: 400;
+			outline: none;
+			border: 0;
+			.responsive(@screen-sm,{
+				font-size: 20px;
+				});
+		}
+	}
+}
+.content-inscription{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

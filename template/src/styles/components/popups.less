@@ -1,0 +1,56 @@
+#pop_background{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: .8;
+	z-index: 1000;
+	cursor: pointer;
+	display: none;
+}
+#pop_inscription{
+	position: fixed;
+	background: #1A1A1A;
+	width: 85%;
+	height: 85%;
+	z-index: 1001;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	padding: 3%;
+	svg{
+		height: 200px;
+		width: auto;
+		margin-bottom: 20px;
+	}
+	h3{
+		font-family: @font-title;
+		font-size: @size-title;
+		color: #fff;
+		font-weight: 400;
+		line-height: 1em;
+		margin: 0;
+	}
+	p{
+		font-family: @font-text;
+		font-size: 26px;
+		color: #fff;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	a{
+		color: #fff;
+		font-family: @font-title;
+		font-weight: 300;
+		font-size: 25px;
+		&::before{
+			content: url(../images/icons/back.svg);
+			height: 50px;
+			width: auto;
+			margin-right: 12px;
+		}
+	}
+}
